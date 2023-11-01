@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xplora Juarez</title>
+    
+    <script type="module" src="./scripts/main.js" defer ></script>
+    <!-- <script src="./scripts/atraccionesData.js"></script> -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Splide -->
+    <script src="splide/splide.min.js"></script>
+    <link rel="stylesheet" href="splide/splide-sea-green.min.css">
+    <!-- Bootstrap -->
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Boxicons -->
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <nav class="p-3 d-flex flex-row justify-content-between align-items-center">
+      <a href="index.html" class="text-decoration-none navbar-brand">
+          <img class="logo" src="assets/logo.png" alt="">
+      </a>
+      <div class="d-flex flex-row g-3 align-items-center">
+
+          <div class="d-none d-md-flex">
+              <a class="btn fs-5 dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Destinos Turisticos
+              </a>
+              <ul class="dropdown-menu">
+                  <li><a class="dropdown-item inputAtraccion" href="atraccion.html">La Rodadora</a></li>
+                  <li><a class="dropdown-item inputAtraccion" href="atraccion.html">Museo de la Revolución en La Frontera</a></li>
+                  <li><a class="dropdown-item inputAtraccion" href="atraccion.html">Monumento a la Mexicanidad</a></li>
+                  <li><a class="dropdown-item inputAtraccion" href="atraccion.html">La Casa de Juan Gabriel</a></li>
+                  <li><a class="dropdown-item inputAtraccion" href="atraccion.html">Centro Cultural Paso del Norte</a></li>
+                  <li><a class="dropdown-item inputAtraccion" href="atraccion.html">El Chamizal</a></li>
+                  <li><a class="dropdown-item inputAtraccion" href="atraccion.html">Catedral de Nuestra Señora de Guadalupe</a></li>
+              </ul>
+              <a href="nosotros.html" class="text-light fs-5 btn">Nosotros</a>
+              <a href="contacto.html" class="text-light fs-5 btn">Contacto</a>
+              <a target="_blank" href="https://forms.office.com/Pages/ResponsePage.aspx?id=lWO64WR6kkuq86fAIMPRj60mNkhm8nJOlLgX1CiPrX1UNkNDQVZGTVc3VzlVRzdKVTVRM1RFOU1CQy4u" class="text-light fs-5 btn">Retroalimentación</a>
+          </div>
+          <div class="d-md-none">
+              <a class="btn fs-5 text-light" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Destinos
+          </a>
+          <ul class="dropdown-menu">
+              <li><a class="dropdown-item inputAtraccion" href="atraccion.html">La Rodadora</a></li>
+              <li><a class="dropdown-item inputAtraccion" href="atraccion.html">Museo de la Revolución en La Frontera</a></li>
+              <li><a class="dropdown-item inputAtraccion" href="atraccion.html">Monumento a la Mexicanidad</a></li>
+              <li><a class="dropdown-item inputAtraccion" href="atraccion.html">La Casa de Juan Gabriel</a></li>
+              <li><a class="dropdown-item inputAtraccion" href="atraccion.html">Centro Cultural Paso del Norte</a></li>
+              <li><a class="dropdown-item inputAtraccion" href="atraccion.html">El Chamizal</a></li>
+              <li><a class="dropdown-item inputAtraccion" href="atraccion.html">Catedral de Nuestra Señora de Guadalupe</a></li>
+          </ul>
+          </div>
+          <div class="d-md-none">
+              <button class="btn fs-5  text-light" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              <box-icon name='menu' color="#fff" size="md"></box-icon>
+          </button>
+          <ul class="dropdown-menu">
+              <li><a href="index.html" class=" btn dropdown-item">Inicio</a></li>
+              <li><a href="nosotros.html" class="  btn dropdown-item">Nosotros</a></li>
+              <li><a href="contacto.html" class="  btn dropdown-item">Contacto</a></li>
+              <li> <a target="_blank" href="https://forms.office.com/Pages/ResponsePage.aspx?id=lWO64WR6kkuq86fAIMPRj60mNkhm8nJOlLgX1CiPrX1UNkNDQVZGTVc3VzlVRzdKVTVRM1RFOU1CQy4u" class="btn dropdown-item">Retroalimentación</a></li>
+          </ul>
+          </div>
+
+  </nav>
+<!-- HERO -->
+<section class="vh-80 d-flex justify-content-center align-items-center atraccionesHero">
+<h1 class="display-1 fw-bold text-light atraccionesNombre text-center"></h1>
+</section>
+
+<section>
+  <div class="container py-5">
+    <div class="row">
+      <div class="col-12 col-md-6">
+        <h1>Reseña</h1>
+        <p class="fs-5 lh-lg atraccionesInfo"></p>
+        <p class="fs-5 lh-lg atraccionesUbicacion"></p>
+      </div>
+      <div class="col-12 col-md-6">
+        <iframe class=" pb-md-0 w-100 h-100 atraccionesMapa" src=""  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bg-light">
+<div class="container py-5">
+<div class="row">
+  <div class="col-12 col-md-4">
+    <h2>Descripcion</h2>
+    <p class="atraccionesInfo2 lh-lg"></p>
+  </div>
+  <div class="col-12 col-md-4">
+    <h2>Horarios</h2>
+    <p class="atraccionesHorarios lh-lg"></p>
+  </div>
+  <div class="col-12 col-md-4 p-0">
+    <img class="w-100 h-100 object-fit-cover atraccionesImagen" alt="" src="">
+  </div>
+
+
+</div>
+</div>
+</section>
+
+<div class="w-100 flex-column gap-2 d-flex justify-content-center align-items-center pt-5">
+  <a class="atraccionesSitioWeb" href="" target="_blank"></a>
+  <a class="atraccionesFacebook" href="" target="_blank"></a>
+  <a class="atraccionesInstagram" href="" target="_blank"></a>
+  <a class="atraccionesTiktok" href="" target="_blank"></a>
+  <a class="atraccionesGmail" href="" target="_blank"></a>
+</div>
+  <!-- FOOTER -->
+  <section class="bg-light">
+    <div class="container">
+        <footer class="row py-5  ">
+            <div class="col-12 col-md-6 mb-3">
+                <h5>Sobre nosotros</h5>
+                <p class="text-muted">Nuestra misión en Xplora Juárez es ofrecer experiencias turísticas inolvidables que destaquen la belleza, la cultura y la diversidad de Ciudad Juárez. Nos comprometemos a brindar a nuestros clientes una atención excepcional y a promover un turismo responsable que beneficie a la comunidad local y respete el entorno natural y cultural.  </p>
+            </div>
+
+            <div class="col-12 col-md-3 mb-3">
+                <h5>Secciones</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-muted">Inicio</a></li>
+                    <li class="nav-item mb-2"><a href="nosotros.html" class="nav-link p-0 text-muted">Nosotros</a></li>
+                    <li class="nav-item mb-2"><a href="contacto.html" class="nav-link p-0 text-muted">Contacto</a></li>
+                    <li class="nav-item mb-2"><a target="_blank" href="https://forms.office.com/Pages/ResponsePage.aspx?id=lWO64WR6kkuq86fAIMPRj60mNkhm8nJOlLgX1CiPrX1UNkNDQVZGTVc3VzlVRzdKVTVRM1RFOU1CQy4u" class="nav-link p-0 text-muted">Retroalimentación</a></li>
+                </ul>
+            </div>
+
+            <div class="col-12 col-md-3 mb-3">
+                <h5>Integrantes</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Alex Beltran Gallegos</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Eibram Alexis Alvarado
+                            Orta</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Luis Ubaldo Flores Pineda</a>
+                    </li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Marcos Casas Caldera</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Valeria Sosa Juarez</a></li>
+                </ul>
+            </div>
+            <a href="condiciones.html" target="_blank" class="text-muted w-100 text-start  text-decoration-none">Terminos y condiciones</span>
+                <a href="privacidad.html" target="_blank" class="text-muted w-100 text-start  text-decoration-none">Politica de privacidad</span>
+                    <span></span>
+        </footer>
+    </div>
+</section>
+
+</body>
+</html>

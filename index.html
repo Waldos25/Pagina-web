@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xplora Juarez</title>
+
+    <script type="module" src="scripts/main.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Splide -->
+    <script src="splide/splide.min.js"></script>
+    <link rel="stylesheet" href="splide/splide-sea-green.min.css">
+    <!-- Bootstrap -->
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"
+        integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT"
+        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Boxicons -->
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <nav class="p-3 d-flex flex-row justify-content-between align-items-center">
+        <a href="index.html" class="text-decoration-none navbar-brand">
+            <img class="logo" src="assets/logo.png" alt="">
+        </a>
+        <div class="d-flex flex-row g-3 align-items-center">
+
+            <div class="d-none d-md-flex">
+                <a class="btn fs-5 dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Destinos Turisticos
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item inputAtraccion" href="atraccion.html">La Rodadora</a></li>
+                    <li><a class="dropdown-item inputAtraccion" href="atraccion.html">Museo de la Revolución en La Frontera</a></li>
+                    <li><a class="dropdown-item inputAtraccion" href="atraccion.html">Monumento a la Mexicanidad</a></li>
+                    <li><a class="dropdown-item inputAtraccion" href="atraccion.html">La Casa de Juan Gabriel</a></li>
+                    <li><a class="dropdown-item inputAtraccion" href="atraccion.html">Centro Cultural Paso del Norte</a></li>
+                    <li><a class="dropdown-item inputAtraccion" href="atraccion.html">El Chamizal</a></li>
+                    <li><a class="dropdown-item inputAtraccion" href="atraccion.html">Catedral de Nuestra Señora de Guadalupe</a></li>
+                </ul>
+                <a href="nosotros.html" class="text-light fs-5 btn">Nosotros</a>
+                <a href="contacto.html" class="text-light fs-5 btn">Contacto</a>
+                <a target="_blank" href="https://forms.office.com/Pages/ResponsePage.aspx?id=lWO64WR6kkuq86fAIMPRj60mNkhm8nJOlLgX1CiPrX1UNkNDQVZGTVc3VzlVRzdKVTVRM1RFOU1CQy4u" class="text-light fs-5 btn">Retroalimentación</a>
+            </div>
+            <div class="d-md-none">
+                <a class="btn fs-5 text-light" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Destinos
+            </a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item inputAtraccion" href="atraccion.html">La Rodadora</a></li>
+                <li><a class="dropdown-item inputAtraccion" href="atraccion.html">Museo de la Revolución en La Frontera</a></li>
+                <li><a class="dropdown-item inputAtraccion" href="atraccion.html">Monumento a la Mexicanidad</a></li>
+                <li><a class="dropdown-item inputAtraccion" href="atraccion.html">La Casa de Juan Gabriel</a></li>
+                <li><a class="dropdown-item inputAtraccion" href="atraccion.html">Centro Cultural Paso del Norte</a></li>
+                <li><a class="dropdown-item inputAtraccion" href="atraccion.html">El Chamizal</a></li>
+                <li><a class="dropdown-item inputAtraccion" href="atraccion.html">Catedral de Nuestra Señora de Guadalupe</a></li>
+            </ul>
+            </div>
+            <div class="d-md-none">
+                <button class="btn fs-5  text-light" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <box-icon name='menu' color="#fff" size="md"></box-icon>
+            </button>
+            <ul class="dropdown-menu">
+                <li><a href="index.html" class=" btn dropdown-item">Inicio</a></li>
+                <li><a href="nosotros.html" class="  btn dropdown-item">Nosotros</a></li>
+                <li><a href="contacto.html" class="  btn dropdown-item">Contacto</a></li>
+                <li> <a target="_blank" href="https://forms.office.com/Pages/ResponsePage.aspx?id=lWO64WR6kkuq86fAIMPRj60mNkhm8nJOlLgX1CiPrX1UNkNDQVZGTVc3VzlVRzdKVTVRM1RFOU1CQy4u" class="btn dropdown-item">Retroalimentación</a></li>
+            </ul>
+            </div>
+
+    </nav>
+    <!-- BANNER -->
+    <div class="splide banner p-0" aria-label="Carrousel Zone">
+        <div class="splide__track">
+            <ul class="splide__list">
+
+                <li class="splide__slide">
+                    <div class="slide__overlay d-flex flex-column justify-content-center align-items-center p-3 p-md-5">
+                        <h1 class="display-2 px-md-5 text-center fw-bold text-light">Un tributo a la mexicanidad</h1>
+                        <span class="fs-1 text-light text-center">¡Conócelo!</span>
+                        <span class="fs-5 text-light name-place text-center text-md-start p-5 w-100">Monumento a la Mexicanidad</span>
+                    </div>
+                    <img src="assets/Monumento-a-la-mexicanidad-1.webp" alt="">
+                </li>
+
+                <li class="splide__slide">
+                    <div class="slide__overlay d-flex flex-column justify-content-center align-items-center p-3 p-md-5">
+                        <h1 class="display-2 px-md-5 text-center fw-bold text-light">Convive en familia</h1>
+                        <span class="fs-1 text-light text-center">En el parque de el chamizal</span>
+                        <span class="fs-5 text-light name-place text-center text-md-start p-5 w-100">El Chamizal</span>
+                    </div>
+                    <img src="assets/museo-de-arqueologia-del-chamizal-1.jpg" alt="">
+                </li>
+
+                <li class="splide__slide">
+                    <div class="slide__overlay d-flex flex-column justify-content-center align-items-center p-3 p-md-5">
+                        <h1 class="display-2 px-md-5 text-center fw-bold text-light">Conoce nuestro legado revolucionario</h1>
+                        <span class="fs-1 text-light text-center">Vive nuestra historia</span>
+                        <span class="fs-5 text-light name-place text-center text-md-start p-5 w-100">Museo de la Revolución en La Frontera</span>
+                    </div>
+                    <img src="assets/Museo de la revolucion en la frontera 1.jpg" alt="">
+                </li>
+
+                <li class="splide__slide">
+                    <div class="slide__overlay d-flex flex-column justify-content-center align-items-center p-3 p-md-5">
+                        <h1 class="display-2 px-md-5 text-center fw-bold text-light">Donde la diversión y el aprendizaje se encuentran</h1>
+                        <span class="fs-1 text-light text-center">Un espacio interactivo para toda la familia</span>
+                        <span class="fs-5 text-light name-place text-center text-md-start p-5 w-100">La Rodadora Espacio Interactivo</span>
+                    </div>
+                    <img src="assets/la-rodadora-1.jpg" alt="">
+                </li>
+
+            </ul>
+        </div>
+    </div>
+    <!-- SECTION -->
+    <section class="pb-5">
+        <div class="container py-5">
+            <div class="row">
+            <div class="col-12 col-md-6">
+            <h1 class="text-dark fw-bold display-4 mb-5">Ciudad Juárez</h1>
+            <span class="fs-5 lh-lg">Conocida por su rica historia y cultura. Fue fundada en 1659 y ha sido testigo de muchos eventos históricos
+            importantes. Por ejemplo, Ciudad Juárez fue la capital de México en 1865 durante la presidencia itinerante
+            de Benito Juárez. <br><br>También fue el lugar donde se firmaron los tratados de Ciudad Juárez que pusieron fin a la
+            presidencia de Porfirio Díaz en 1911. Además, Ciudad Juárez es el lugar de origen de los burritos, un
+            plato popular en todo el mundo 1.
+                <br><br>
+            La ciudad también es conocida por su vibrante vida nocturna y su deliciosa comida. Hay muchos restaurantes y
+            bares excelentes en toda la ciudad. Si te gusta la música en vivo, hay muchos lugares donde puedes disfrutar
+            de bandas locales y nacionales.
+        </span>
+    </div>
+    <div class="col-12 col-md-6 ">
+        <iframe class="my-5 pb-md-0 w-100 h-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d217362.02081155116!2d-106.76075485632335!3d31.653515359213596!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86e75ecb3d0b329d%3A0xb196100549c7974!2sCd%20Ju%C3%A1rez%2C%20Chih.!5e0!3m2!1ses-419!2smx!4v1696197838100!5m2!1ses-419!2smx"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+</div>
+
+        </div>
+    </section>
+    <!-- SECTION -->
+    <section class="bg-light">
+        <div class="container py-5">
+            <h1 class="fs-1 text-center text-md-start">¡No te lo pierdas!</h1>
+            <div class="row d-flex justify-content-around">
+                <!-- CARD -->
+                <div class="col-auto m-5 m-md-none">
+                    <div class="card shadow" style="width: 18rem;">
+                        <img src="assets/museo-de-arqueologia-del-chamizal-1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Museo de Arqueologia de El Chamizal</h5>
+                            <p class="card-text">En este museo se muestra información sobre las culturas antiguas de la
+                                región, Aridoamérica y Paquimé, la herencia del México Precolombino y la disputa del
+                                chamizal. </p>
+                            <hr>
+                            <div class="row">
+                                <div class="col-auto">
+                                    <a href="https://www.facebook.com/MuseoElChamizal " target="_blank">
+                                        <box-icon type='logo' name='facebook-circle' size="md"
+                                            color="#0866ff"></box-icon>
+                                    </a>
+                                </div>
+                                <div class="col-auto">
+                                    <box-icon type='solid' name='phone-call' size="md" color="#319950"></box-icon>
+                                </div>
+                                <div class="col-auto">
+                                    <a href="https://maps.app.goo.gl/Zy8yjgq6nsjmVJvDA" target="_blank">
+                                        <box-icon type='solid' name='map' size="md" color="#a83254"></box-icon>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- CARD -->
+                <div class="col-auto m-5 m-md-none">
+                    <div class="card shadow" style="width: 18rem;">
+                        <img src="assets/casa-de-juan-gabriel-1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Casa de Juan Gabriel</h5>
+                            <p class="card-text"> Juan Gabriel es un personaje icónico de Cd. Juarez que se ha ganado el
+                                cariño de los habitantes juarenses, bautizado como “El divo de Juarez”, visita la famosa
+                                casa del cantante, y conoce aun mas de su historia en nuestra ciudad</p>
+                            <hr>
+                            <div class="row">
+                                <div class="col-auto">
+                                    <a href="https://maps.app.goo.gl/wTYNav4z3vEQu64a9 " target="_blank">
+                                        <box-icon type='solid' name='map' size="md" color="#a83254"></box-icon>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- CARD -->
+                <div class="col-auto m-5 m-md-none">
+                    <div class="card shadow" style="width: 18rem;">
+                        <img src="assets/centro-cultural-paso-del-norte-1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Centro Cultural Paso del Norte</h5>
+                            <p class="card-text">El centro cultural paso del norte es un centro de arte, música y
+                                teatro, en este puedes asistir a las presentaciones de música clásica, las
+                                interpretaciones de obras famosas de ballet y otros...</p>
+                            <hr>
+                            <div class="row">
+                                <div class="col-auto">
+                                    <a href="https://www.facebook.com/ccpnoficial/ " target="blank">
+                                        <box-icon type='logo' name='facebook-circle' size="md"
+                                            color="#0866ff"></box-icon>
+                                    </a>
+                                </div>
+                                <div class="col-auto">
+                                    <a href="https://maps.app.goo.gl/3QH5eEbHENaQXDKj7" target="_blank">
+                                        <box-icon type='solid' name='map' size="md" color="#a83254"></box-icon>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- SECTION -->
+    <section>
+        <div class="container py-5">
+            <h1 class="text-center text-md-start mb-5">Galería de atracciones</h1>
+            <div class="masonry-container">
+                <img src="./assets/masonry-1.jpg" alt="">
+                <img src="./assets/masonry-2.jpg" alt="">
+                <img src="./assets/masonry-3.jpg" alt="">
+                <img src="./assets/masonry-4.jpg" alt="">
+                <img src="./assets/masonry-5.jpg" alt="">
+                <img src="./assets/masonry-6.jpg" alt="">
+                <img src="./assets/masonry-9.jpg" alt="">
+                <img src="./assets/masonry-7.jpg" alt="">
+                <img src="./assets/masonry-8.jpg" alt="">
+                <img src="./assets/masonry-10.jpg" alt="">
+                <img src="./assets/masonry-11.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    <!-- FOOTER -->
+    <section class="bg-light">
+    <div class="container">
+        <footer class="row py-5  ">
+            <div class="col-12 col-md-6 mb-3">
+                <h5>Sobre nosotros</h5>
+                <p class="text-muted">Nuestra misión en Xplora Juárez es ofrecer experiencias turísticas inolvidables que destaquen la belleza, la cultura y la diversidad de Ciudad Juárez. Nos comprometemos a brindar a nuestros clientes una atención excepcional y a promover un turismo responsable que beneficie a la comunidad local y respete el entorno natural y cultural.  </p>
+            </div>
+
+            <div class="col-12 col-md-3 mb-3">
+                <h5>Secciones</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-muted">Inicio</a></li>
+                    <li class="nav-item mb-2"><a href="nosotros.html" class="nav-link p-0 text-muted">Nosotros</a></li>
+                    <li class="nav-item mb-2"><a href="contacto.html" class="nav-link p-0 text-muted">Contacto</a></li>
+                    <li class="nav-item mb-2"><a target="_blank" href="https://forms.office.com/Pages/ResponsePage.aspx?id=lWO64WR6kkuq86fAIMPRj60mNkhm8nJOlLgX1CiPrX1UNkNDQVZGTVc3VzlVRzdKVTVRM1RFOU1CQy4u" class="nav-link p-0 text-muted">Retroalimentación</a></li>
+                </ul>
+            </div>
+
+            <div class="col-12 col-md-3 mb-3">
+                <h5>Integrantes</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Alex Beltran Gallegos</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Eibram Alexis Alvarado
+                            Orta</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Luis Ubaldo Flores Pineda</a>
+                    </li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Marcos Casas Caldera</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Valeria Sosa Juarez</a></li>
+                </ul>
+            </div>
+            <a href="condiciones.html" target="_blank" class="text-muted w-100 text-start  text-decoration-none">Terminos y condiciones</a>
+                <a href="privacidad.html" target="_blank" class="text-muted w-100 text-start  text-decoration-none">Politica de privacidad</a>
+                <span class="text-muted w-100 text-star mt-5">Copyright © 2023 XploraJuarez.</span>
+        </footer>
+    </div>
+</section>
+
+</body>
+
+</html>
