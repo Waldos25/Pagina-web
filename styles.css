@@ -2,12 +2,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 body{
     background-image: url('./assets/bg-x-white.svg');
     background-size: cover;
     background-position: right;
     background-attachment: fixed;
+
 }
 section{
     /* min-height: 100vh;  */
@@ -101,3 +103,128 @@ box-icon{
     background-position: center;
     background-size: cover;
 }
+/* .BotonAccesibilidad {
+
+    font-family: monospace;
+    background-color: transparent;
+    color: #3b82f6;
+    border: none;
+    border-radius: 50%;
+    padding: 2px 2px;
+    transition: .3s;
+    position: fixed;
+    bottom: 10px;
+    height:min-content ;    
+    right: 10px;
+    margin: auto;
+  }
+  .BotonAccesibilidad img{
+
+    height: 60px;
+
+  }
+  .BotonAccesibilidad:hover {
+    background-color: #709be5;
+    box-shadow: 0 0 0 5px #3b83f65f;
+    color: #fff;
+  } */
+
+  .ContenedorBoton{
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    margin: auto;
+  }
+
+  /* Cool share button made by: csozi | Website: english.csozi.hu*/
+
+.buttons {
+    position: relative;
+    display: grid;
+    place-items: center;
+    height: fit-content;
+    width: fit-content;
+    transition-duration:50ms;
+    border-radius: 50%;
+  }
+
+  
+  .buttons:hover .button {
+    box-shadow: 5px 5px 12px #cacaca, -5px -5px 12px #ffffff;
+    transition-duration: 50ms;
+  }
+  
+  .main-button {
+    position: relative;
+    display: grid;
+    place-items: center;
+    padding: 0px;
+    border: none;
+    background: #e8e8e8;
+    box-shadow: 5px 5px 12px #cacaca, -5px -5px 12px #ffffff;
+    border-radius: 50%;
+    transition-duration:50ms;
+    z-index: 100;
+
+  }
+  
+  .button {
+    position: absolute;
+    display: grid;
+    place-items: center;
+    padding: 10px;
+    border: none;
+    background: #e8e8e8;
+    box-shadow: 5px 5px 12px rgba(202, 202, 202, 0), -5px -5px 12px rgba(255, 255, 255, 0);
+    transition-duration:50ms;
+    border-radius: 50%;
+  }
+  
+  .messenger-button:hover {
+    background: #0093FF;
+  }
+  
+  .buttons:hover .messenger-button {
+    translate: 0px -55px;
+    box-shadow: 5px 5px 12px #cacaca, -5px -5px 12px #ffffff;
+    transition-duration: 50ms;
+  }
+  
+  .pinterest-button:hover {
+    background: #F0002A;
+  }
+  
+  .buttons:hover .pinterest-button {
+    translate: 0px -110px;
+    box-shadow: 5px 5px 12px #cacaca, -5px -5px 12px #ffffff;
+    transition-duration: 50ms;
+    color: #000!important;
+  }
+  
+  .instagram-button:hover {
+    background: #F914AF;
+  }
+  
+  .buttons:hover .instagram-button {
+
+    translate: 0px -165px;
+    box-shadow: 5px 5px 12px #cacaca, -5px -5px 12px #ffffff;
+    transition-duration: 50ms;
+  }
+  
+  .snapchat-button:hover {
+    background: #FFFC00;
+    width: 45px;
+  }
+  
+  .buttons:hover .snapchat-button {
+    translate: 0px -220px;
+    box-shadow: 5px 5px 12px #cacaca, -5px -5px 12px #ffffff;
+    transition-duration: 50ms;
+  }
+
+  .contrast-high {
+    background-color: #000;
+    color: #fff;
+    /* Agregar otros estilos para aumentar el contraste */
+  }

@@ -71,13 +71,58 @@ var splide = new Splide( '.banner', {
 
 splide.mount(  );
 
+//Button
+const temaOscuro = () => {
+  document.querySelector("body").setAttribute("data-bs-theme", "dark");
+  document.querySelector("#dl-icon").setAttribute("class", "bi bi-sun-fill");
+  document.querySelector(".iconoModoOscuro").src="./assets/bxs-sun.svg"
 
+  // Cambia el color de los textos
+  document.querySelectorAll(".text-dark").forEach((item) => {
+    item.classList.add("text-light")
+    item.classList.remove("text-dark")
+  })
+  // Cambia el color de los fondos
+  document.querySelectorAll(".bg-light").forEach((item) => {
+    item.classList.add("bg-dark")
+    item.classList.remove("bg-light")
+  })
+}
+const temaBlanco = () => {
+  document.querySelector("body").setAttribute("data-bs-theme", "ligth");
+  document.querySelector("#dl-icon").setAttribute("class", "bi bi-moon-fill");
+  document.querySelector(".iconoModoOscuro").src="./assets/bxs-moon.svg"
 
+  document.querySelectorAll(".text-ligth").forEach((item) => {
+    item.classList.add("text-dark")
+    item.classList.remove("text-light")
+  })
+  // Cambia el color de los fondos
+  document.querySelectorAll(".bg-dark").forEach((item) => {
+    item.classList.add("bg-light")
+    item.classList.remove("bg-dark")
+  })
 
+}
+const cambiarTema = () => {
+  document.querySelector("body").getAttribute("data-bs-theme") === "ligth"?
+  temaOscuro() : temaBlanco();
+}
 
-
-
-
-
-
-
+let tamañoActual = 0;
+function aumentarTamañoDeLetra() {
+  // Obtenemos todos los elementos con las clases de tamaño de fuente de Bootstrap
+  const elementosConTamañoDeFuente = document.querySelectorAll('.fs-5, .fs-4, .display-1');
+  console.log(elementosConTamañoDeFuente)
+  // Aumentamos el tamaño de fuente de cada elemento en 2px
+  elementosConTamañoDeFuente.forEach(elemento => {
+    const estiloActual = getComputedStyle(elemento);
+    tamañoActual = parseInt(estiloActual.fontSize);
+    console.log(tamañoActual)
+    elemento.classList.remove("fs-5")
+    elemento.classList.remove("fs-4")
+    elemento.classList.remove("display-1")
+    elemento.style.fontSize = (tamañoActual + 2) + 'px';
+  });
+}
+document.getElementById("font-up").addEventListener("click", () => aumentarTamañoDeLetra())
