@@ -11,6 +11,7 @@ body{
     background-attachment: fixed;
 
 }
+
 section{
     /* min-height: 100vh;  */
 }
@@ -228,3 +229,5 @@ box-icon{
     color: #fff;
     /* Agregar otros estilos para aumentar el contraste */
   }
+
+
