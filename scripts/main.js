@@ -109,36 +109,25 @@ const cambiarTema = () => {
   temaOscuro() : temaBlanco();
 }
 
-let tamañoActual = 0;
+
+let tamañoActual = 20; // Tamaño de fuente inicial en píxeles (ajusta esto según tus necesidades)
+
 function aumentarTamañoDeLetra() {
-  // Obtenemos todos los elementos con las clases de tamaño de fuente de Bootstrap
-  const elementosConTamañoDeFuente = document.querySelectorAll('.fs-5, .fs-4, .display-1');
-  console.log(elementosConTamañoDeFuente)
-  // Aumentamos el tamaño de fuente de cada elemento en 2px
-  elementosConTamañoDeFuente.forEach(elemento => {
-    const estiloActual = getComputedStyle(elemento);
-    tamañoActual = parseInt(estiloActual.fontSize);
-    console.log(tamañoActual)
-    elemento.classList.remove("fs-5")
-    elemento.classList.remove("fs-4")
-    elemento.classList.remove("display-1")
-    elemento.style.fontSize = (tamañoActual + 2) + 'px';
-  });
+  tamañoActual += 2;
+  cambiarTamañoDeFuente();
 }
+
 function disminuirTamañoDeLetra() {
-  // Obtenemos todos los elementos con las clases de tamaño de fuente de Bootstrap
+  tamañoActual -= 2;
+  cambiarTamañoDeFuente();
+}
+
+function cambiarTamañoDeFuente() {
   const elementosConTamañoDeFuente = document.querySelectorAll('.fs-5, .fs-4, .display-1');
-  console.log(elementosConTamañoDeFuente)
-  // Aumentamos el tamaño de fuente de cada elemento en 2px
   elementosConTamañoDeFuente.forEach(elemento => {
-    const estiloActual = getComputedStyle(elemento);
-    tamañoActual = parseInt(estiloActual.fontSize);
-    console.log(tamañoActual)
-    elemento.classList.remove("fs-5")
-    elemento.classList.remove("fs-4")
-    elemento.classList.remove("display-1")
-    elemento.style.fontSize = (tamañoActual - 2) + 'px';
+    elemento.style.fontSize = tamañoActual + 'px';
   });
 }
-document.getElementById("font-up").addEventListener("click", () => aumentarTamañoDeLetra())
-document.getElementById("font-down").addEventListener("click", () => disminuirTamañoDeLetra())
+
+document.getElementById("font-up").addEventListener("click", aumentarTamañoDeLetra);
+document.getElementById("font-down").addEventListener("click", disminuirTamañoDeLetra);
