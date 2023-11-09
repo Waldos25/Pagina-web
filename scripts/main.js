@@ -125,4 +125,20 @@ function aumentarTamañoDeLetra() {
     elemento.style.fontSize = (tamañoActual + 2) + 'px';
   });
 }
+function disminuirTamañoDeLetra() {
+  // Obtenemos todos los elementos con las clases de tamaño de fuente de Bootstrap
+  const elementosConTamañoDeFuente = document.querySelectorAll('.fs-5, .fs-4, .display-1');
+  console.log(elementosConTamañoDeFuente)
+  // Aumentamos el tamaño de fuente de cada elemento en 2px
+  elementosConTamañoDeFuente.forEach(elemento => {
+    const estiloActual = getComputedStyle(elemento);
+    tamañoActual = parseInt(estiloActual.fontSize);
+    console.log(tamañoActual)
+    elemento.classList.remove("fs-5")
+    elemento.classList.remove("fs-4")
+    elemento.classList.remove("display-1")
+    elemento.style.fontSize = (tamañoActual - 2) + 'px';
+  });
+}
 document.getElementById("font-up").addEventListener("click", () => aumentarTamañoDeLetra())
+document.getElementById("font-down").addEventListener("click", () => disminuirTamañoDeLetra())
